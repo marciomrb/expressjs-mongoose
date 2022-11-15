@@ -1,6 +1,6 @@
 
 import { Router } from 'express';
-import path from 'node:path';
+import path from 'path';
 import multer from 'multer';
 
 // category
