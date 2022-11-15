@@ -4,7 +4,7 @@ import { Product } from '../../models/Product';
 export async function createProduct(req: Request, res: Response) {
 
   try {
-    const imagePath = req.file?.filename;
+    const imagePath = req.file?.path;
     const { name, description, price, category } = req.body;
 
     const product = await Product.create({
