@@ -2,6 +2,7 @@ import "./lib/db";
 import express from "express";
 import cors from "cors";
 import { router } from './routes';
+import path from 'node:path';
 
 
 const app = express();
