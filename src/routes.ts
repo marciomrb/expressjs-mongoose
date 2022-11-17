@@ -26,6 +26,7 @@ import { createUsers } from './useCases/users/createUsers';
 import { getUserById } from './useCases/users/getUserById';
 import { updateUser } from './useCases/users/updateUser';
 import { deleteUser } from './useCases/users/deleteUser';
+import { updateProduct } from './useCases/products/updateProduct';
 
 
 cloudinary.config({ 
@@ -56,6 +57,9 @@ router.get('/products', listProducts);
 
 // create product
 router.post('/products', upload.single('image'), createProduct);
+
+// edit product
+router.put('/products/:productId', upload.single('image'), updateProduct);
 
 // delete product 
 router.delete('/products/:productId', deleteProduct);
