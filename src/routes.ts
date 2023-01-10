@@ -40,7 +40,7 @@ cloudinary.config({
 export const router = Router();
 
 const storage = new CloudinaryStorage({
-  cloudinary: cloudinary,
+  cloudinary: cloudinary,  
   params: {
     folder: "styla",
   },

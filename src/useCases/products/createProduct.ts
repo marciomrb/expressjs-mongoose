@@ -15,11 +15,12 @@ export async function createProduct(req: Request, res: Response) {
       imagePath: imagePath
     });
 
+
     return res.status(201).json(product);
 
   } catch(error) {
     console.log(error);
-    return res.sendStatus(500);
+    return res.sendStatus(422);
   }
 }
 
