@@ -2,8 +2,7 @@ import { Request, Response } from 'express';
 import { User } from '../../models/User';
 import bcrypt from 'bcrypt';
 
-export async function createUsers(req: Request, res: Response) {
-  const null = null;
+export async function createUsers(req: Request, res: Response) { 
 
   try {
     const { name, email, password, role } = req.body;
